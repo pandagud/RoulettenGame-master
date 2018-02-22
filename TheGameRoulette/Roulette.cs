@@ -8,11 +8,11 @@ namespace RouletteGame.Legacy
     {
         private readonly List<Field> _fields;
         private Field _result;
-        private IRandom randomizer;
+        private IRandom _randomizer;
 
-        public Roulette(IRandom _randomizer)
+        public Roulette(IRandom randomizer)
         {
-            randomizer = _randomizer;
+            _randomizer = randomizer;
             _fields = new List<Field>
             {
                 
@@ -60,7 +60,7 @@ namespace RouletteGame.Legacy
 
         public void Spin()
         {
-            var n = randomizer.Next();
+            var n = _randomizer.Next();
             _result = _fields[(int) n];
         }
 
