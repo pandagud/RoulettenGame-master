@@ -53,9 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bet.cs" />
+    <Compile Include="FakeFieldFactory.cs" />
     <Compile Include="FakeRoulette.cs" />
     <Compile Include="Field.cs" />
     <Compile Include="IBet.cs" />
+    <Compile Include="IFieldFactory.cs" />
     <Compile Include="IRandom.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Randomizer.cs" />
