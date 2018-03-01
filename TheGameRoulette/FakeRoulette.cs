@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TheGameRoulette
+﻿namespace TheGameRoulette
 {
     class FakeRoulette
     {
@@ -12,12 +6,8 @@ namespace TheGameRoulette
         public const uint Black = 1;
         public const uint Green = 2;
 
-        private uint _color;
-        private uint _number;
         public FakeRoulette(uint color, uint number)
         {
-            _color = color;
-            _number = number;
         }
 
         public uint Number()
